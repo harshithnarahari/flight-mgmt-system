@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean name="user" class="com.me.EzFlight.pojo.User" scope="request"></bean>
+	<bean name="location" class="com.me.EzFlight.pojo.Location" scope="request"></bean>
+	<bean name="airline" class="com.me.EzFlight.pojo.Airline" scope="request"></bean>
+	<bean name="flight" class="com.me.EzFlight.pojo.Flight" scope="request"></bean>
+	<bean name="flightTicket" class="com.me.EzFlight.pojo.FlightTicket" scope="request"></bean>
+	<bean name="interceptor" class="com.me.EzFlight.Interceptor.MyInterceptor" scope="singleton"></bean>
+	<bean name="validator" class="com.me.EzFlight.validator.UserValidator"></bean>
+		
+</beans>
+	

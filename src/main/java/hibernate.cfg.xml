@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/flightDb</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">Saibaba@123</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <property name="show_sql">true</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  
+  <mapping class="com.me.EzFlight.pojo.User"></mapping>
+  <mapping class="com.me.EzFlight.pojo.Location"></mapping>
+  <mapping class="com.me.EzFlight.pojo.Airline"></mapping>
+  <mapping class="com.me.EzFlight.pojo.Flight"></mapping>
+  <mapping class="com.me.EzFlight.pojo.FlightTicket"></mapping>
+  
+  
+  
+ </session-factory>
+</hibernate-configuration>
